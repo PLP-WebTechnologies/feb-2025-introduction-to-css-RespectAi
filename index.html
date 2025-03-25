@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 2 HTML Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>HTML Assignment Week 2</h1>
+  </header>
+
+  <!-- Ordered List with Roman Numerals -->
+  <section>
+    <h2>Ordered List</h2>
+    <ol type="I">
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+      <li>Fourth item</li>
+      <li>Fifth item</li>
+    </ol>
+  </section>
+
+  <!-- External Image from Pexels -->
+  <section>
+    <h2>External Image</h2>
+    <!-- Direct image URL from Pexels -->
+    <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" 
+         alt="Close-up photo of programming codes" width="500">
+  </section>
+
+  <!-- Table of Contacts -->
+  <section>
+    <h2>Contact List</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>S/N</th>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>John Jin</td>
+          <td>123 Main St.</td>
+          <td>+345 735-746-6465</td>
+          <td>Janierun@gmail.com</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jane Part</td>
+          <td>45/89 Opala St.</td>
+          <td>+245 810-578-3733</td>
+          <td>okmwom@gmail.com</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>John Smith</td>
+          <td>89 Problem St.</td>
+          <td>+1 264-595-5555</td>
+          <td>boweio@gmail.com</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Jane Smith</td>
+          <td>+123 Max St.</td>
+          <td>+324-555-555-6376</td>
+          <td>orioojw@gmail.com</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Gods Power</td>
+          <td>34/54 John Bill St.</td>
+          <td>+456 898-193-4597</td>
+          <td>ajncwjn@yahoo.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Registration Form -->
+  <section>
+    <h2>Registration Form</h2>
+    <form>
+      <!-- Basic Information -->
+      <fieldset>
+        <legend>Basic Information</legend>
+        <div class="form-group">
+          <label for="full-name">Full Name <span class="required">*</span></label>
+          <input type="text" id="full-name" name="full-name" placeholder="Your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email <span class="required">*</span></label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password <span class="required">*</span></label>
+          <input type="password" id="password" name="password" placeholder="At least 8 characters" minlength="8" required>
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth <span class="required">*</span></label>
+          <input type="date" id="dob" name="dob" required>
+        </div>
+      </fieldset>
+
+      <!-- Gender Selection -->
+      <fieldset>
+        <legend>Gender</legend>
+        <div class="form-group">
+          <label><input type="radio" name="gender" value="male" required> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+          <label><input type="radio" name="gender" value="other"> Other</label>
+        </div>
+      </fieldset>
+
+      <!-- Country Dropdown -->
+      <fieldset>
+        <legend>Country</legend>
+        <div class="form-group">
+          <label for="country">Country <span class="required">*</span></label>
+          <select id="country" name="country" required>
+            <option value="">Select country</option>
+            <option value="nigeria ">Nigeria</option>
+            <option value="kenya">Kenya</option>
+            <option value="outh africa">South Africa</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <!-- Interests Checkboxes -->
+      <fieldset>
+        <legend>Interests</legend>
+        <div class="form-group">
+          <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+          <label><input type="checkbox" name="interests" value="music"> Music</label>
+          <label><input type="checkbox" name="interests" value="reading"> Reading</label>
+          <label><input type="checkbox" name="interests" value="tech"> Tech</label>
+          <label><input type="checkbox" name="interests" value="coding"> Coding</label>
+        </div>
+      </fieldset>
+
+      <!-- Terms and Conditions -->
+      <div class="form-group">
+        <label><input type="checkbox" name="terms" required> I agree to the terms and conditions <span class="required">*</span></label>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <!-- Multimedia Elements: Audio and Video -->
+  <section>
+    <h2>Multimedia Elements</h2>
+    <!-- Audio Element -->
+    <div>
+      <h3>Audio Sample</h3>
+      <audio controls>
+        <source src="https://cdn.trendybeatz.com/audio/Sounds-Of-Salem-Ft-Lawrence-Oyor-and-Moses-Akoh-We-Will-Be-Many-New-Song-(TrendyBeatz.com).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <!-- Video Element -->
+    <div>
+      <h3>Video Sample</h3>
+      <video controls width="500">
+        <source src="https://videos.pexels.com/video-files/3173312/3173312-uhd_2560_1440_30fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+</body>
+</html>
