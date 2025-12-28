@@ -3,178 +3,380 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Week 2 HTML Assignment</title>
+  <meta name="description" content="Professional portfolio of Respect - Web Developer & Designer">
+  <meta name="keywords" content="web development, portfolio, programming, design">
+  <meta name="author" content="Respect">
+  <title>Your Name - Web Developer Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>HTML Assignment Week 2</h1>
-  </header>
-
-  <!-- Ordered List with Roman Numerals -->
-  <section>
-    <h2>Ordered List</h2>
-    <ol type="I">
-      <li>First item</li>
-      <li>Second item</li>
-      <li>Third item</li>
-      <li>Fourth item</li>
-      <li>Fifth item</li>
-    </ol>
-  </section>
-
-  <!-- External Image from Pexels -->
-  <section>
-    <h2>External Image</h2>
-    <!-- Direct image URL from Pexels -->
-    <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" 
-         alt="Close-up photo of programming codes" width="500">
-  </section>
-
-  <!-- Table of Contacts -->
-  <section>
-    <h2>Contact List</h2>
-    <table border="1">
-      <thead>
-        <tr>
-          <th>S/N</th>
-          <th>Name</th>
-          <th>Address</th>
-          <th>Mobile</th>
-          <th>Email</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>John Jin</td>
-          <td>123 Main St.</td>
-          <td>+345 735-746-6465</td>
-          <td>Janierun@gmail.com</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Jane Part</td>
-          <td>45/89 Opala St.</td>
-          <td>+245 810-578-3733</td>
-          <td>okmwom@gmail.com</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>John Smith</td>
-          <td>89 Problem St.</td>
-          <td>+1 264-595-5555</td>
-          <td>boweio@gmail.com</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>Jane Smith</td>
-          <td>+123 Max St.</td>
-          <td>+324-555-555-6376</td>
-          <td>orioojw@gmail.com</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>Gods Power</td>
-          <td>34/54 John Bill St.</td>
-          <td>+456 898-193-4597</td>
-          <td>ajncwjn@yahoo.com</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <!-- Registration Form -->
-  <section>
-    <h2>Registration Form</h2>
-    <form>
-      <!-- Basic Information -->
-      <fieldset>
-        <legend>Basic Information</legend>
-        <div class="form-group">
-          <label for="full-name">Full Name <span class="required">*</span></label>
-          <input type="text" id="full-name" name="full-name" placeholder="Your full name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email <span class="required">*</span></label>
-          <input type="email" id="email" name="email" placeholder="your@email.com" required>
-        </div>
-        <div class="form-group">
-          <label for="password">Password <span class="required">*</span></label>
-          <input type="password" id="password" name="password" placeholder="At least 8 characters" minlength="8" required>
-        </div>
-        <div class="form-group">
-          <label for="dob">Date of Birth <span class="required">*</span></label>
-          <input type="date" id="dob" name="dob" required>
-        </div>
-      </fieldset>
-
-      <!-- Gender Selection -->
-      <fieldset>
-        <legend>Gender</legend>
-        <div class="form-group">
-          <label><input type="radio" name="gender" value="male" required> Male</label>
-          <label><input type="radio" name="gender" value="female"> Female</label>
-          <label><input type="radio" name="gender" value="other"> Other</label>
-        </div>
-      </fieldset>
-
-      <!-- Country Dropdown -->
-      <fieldset>
-        <legend>Country</legend>
-        <div class="form-group">
-          <label for="country">Country <span class="required">*</span></label>
-          <select id="country" name="country" required>
-            <option value="">Select country</option>
-            <option value="nigeria ">Nigeria</option>
-            <option value="kenya">Kenya</option>
-            <option value="outh africa">South Africa</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-      </fieldset>
-
-      <!-- Interests Checkboxes -->
-      <fieldset>
-        <legend>Interests</legend>
-        <div class="form-group">
-          <label><input type="checkbox" name="interests" value="sports"> Sports</label>
-          <label><input type="checkbox" name="interests" value="music"> Music</label>
-          <label><input type="checkbox" name="interests" value="reading"> Reading</label>
-          <label><input type="checkbox" name="interests" value="tech"> Tech</label>
-          <label><input type="checkbox" name="interests" value="coding"> Coding</label>
-        </div>
-      </fieldset>
-
-      <!-- Terms and Conditions -->
-      <div class="form-group">
-        <label><input type="checkbox" name="terms" required> I agree to the terms and conditions <span class="required">*</span></label>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Respect Portfolio</a>
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
+    </div>
+  </nav>
 
-      <!-- Submit Button -->
-      <button type="submit">Register</button>
-    </form>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Respect</span>
+        </h1>
+        <h2 class="hero-subtitle">Web Developer & App Developer</h2>
+        <p class="hero-description">
+          I create beautiful, responsive websites and applications that provide exceptional user experiences.
+          Let's build something amazing together.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-placeholder">
+          <i class="fas fa-user-circle"></i>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <a href="#about">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </div>
   </section>
 
-  <!-- Multimedia Elements: Audio and Video -->
-  <section>
-    <h2>Multimedia Elements</h2>
-    <!-- Audio Element -->
-    <div>
-      <h3>Audio Sample</h3>
-      <audio controls>
-        <source src="https://cdn.trendybeatz.com/audio/Sounds-Of-Salem-Ft-Lawrence-Oyor-and-Moses-Akoh-We-Will-Be-Many-New-Song-(TrendyBeatz.com).mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </div>
-    <!-- Video Element -->
-    <div>
-      <h3>Video Sample</h3>
-      <video controls width="500">
-        <source src="https://videos.pexels.com/video-files/3173312/3173312-uhd_2560_1440_30fps.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-image">
+          <div class="image-frame">
+            <div class="profile-placeholder">
+              <i class="fas fa-user"></i>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h3>Passionate Developer & Problem Solver</h3>
+          <p>
+            Hello! I'm a web developer with a passion for creating elegant solutions to complex problems.
+            I specialize in building modern, responsive websites and applications that not only look great
+            but deliver outstanding user experiences.
+          </p>
+          <p>
+            With expertise in both frontend and backend technologies, I bring ideas to life through
+            clean, efficient code. I'm constantly learning and staying up-to-date with the latest
+            web technologies and best practices.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <h4>5+</h4>
+              <p>Projects Completed</p>
+            </div>
+            <div class="stat-item">
+              <h4>10+</h4>
+              <p>Technologies Mastered</p>
+            </div>
+            <div class="stat-item">
+              <h4>100%</h4>
+              <p>Client Satisfaction</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Technologies</h2>
+      <p class="section-subtitle">Technologies I work with to bring your ideas to life</p>
+      
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h3>HTML5</h3>
+          <p>Semantic markup and modern web standards</p>
+        </div>
+        
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <h3>CSS3</h3>
+          <p>Responsive design, animations, and modern layouts</p>
+        </div>
+        
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-js"></i>
+          </div>
+          <h3>JavaScript</h3>
+          <p>Interactive and dynamic web applications</p>
+        </div>
+        
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-react"></i>
+          </div>
+          <h3>React</h3>
+          <p>Building modern component-based UIs</p>
+        </div>
+        
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-node"></i>
+          </div>
+          <h3>Node.js</h3>
+          <p>Server-side development and APIs</p>
+        </div>
+        
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-git-alt"></i>
+          </div>
+          <h3>Git & GitHub</h3>
+          <p>Version control and collaboration</p>
+        </div>
+        
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>Databases</h3>
+          <p>SQL and NoSQL database management</p>
+        </div>
+        
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>Responsive Design</h3>
+          <p>Mobile-first, cross-device compatibility</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">A showcase of my recent work and creative solutions</p>
+      
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Code editor with colorful syntax highlighting">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View live demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" aria-label="View source code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Portfolio Website</h3>
+            <p>A modern, responsive portfolio website built with HTML, CSS, and JavaScript featuring smooth animations and mobile-first design.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Laptop showing web development">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View live demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" aria-label="View source code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>E-Commerce Platform</h3>
+            <p>Full-stack e-commerce solution with shopping cart, payment integration, and admin dashboard for inventory management.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Mobile app development">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View live demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" aria-label="View source code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Task Management App</h3>
+            <p>Productivity application with drag-and-drop functionality, real-time updates, and collaborative features for teams.</p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">Have a project in mind? Let's work together!</p>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Let's Connect</h3>
+          <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+          
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <a href="mailto:your.email@example.com">your.email@example.com</a>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Phone</h4>
+                <a href="tel:+1234567890">+123 456 7890</a>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Location</h4>
+                <p>Your City, Country</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="https://github.com/yourusername" class="social-link" aria-label="GitHub" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/yourusername" class="social-link" aria-label="LinkedIn" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/yourusername" class="social-link" aria-label="Twitter" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://codepen.io/yourusername" class="social-link" aria-label="CodePen" target="_blank">
+              <i class="fab fa-codepen"></i>
+            </a>
+          </div>
+        </div>
+        
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Full Name <span class="required">*</span></label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject <span class="required">*</span></label>
+            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message <span class="required">*</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary">
+            Send Message
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <p>Designed & Built with <i class="fas fa-heart"></i> by Your Name</p>
+      </div>
+      <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
